@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    <bean id="Credit" class="com.SpringApp.beans.CreditCardPay"></bean>
+    <bean id="Debit" class="com.SpringApp.beans.DebitCardPay" />
+    
+    <bean id="payment" class="com.SpringApp.beans.PaymentProcess">
+		<!--We Can't call the 2 ref at the same'
+		<property name="pay" ref="Credit"></property>
+		-->
+		<property name="pay" ref="Credit"></property>
+		
+		<constructor-arg name="pay" ref="Debit"></constructor-arg>
+	</bean>
+
+</beans>
