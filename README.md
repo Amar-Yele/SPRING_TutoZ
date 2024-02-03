@@ -1,5 +1,5 @@
 # Spring_TutoZ
-
+## Scratch Spring
 Spring is Framework which used to develop the Enterprize Java Applications. 
 
 To Building the such applications Spring provide Cohesive and modular approach.
@@ -48,4 +48,39 @@ To collect the information from XML by IOC there is two approaches
 # ===============================
 
 Constructor is get automatically Called whenever we creat it's Object.
+
+# ==============================
+
+## Spring-03 Annotaion
+
+### Annotation
+
+came in the java's 1.5 version.
+
+Annotation means Metadata only.
+
+They are can be used as a message to developer, msg to the Compiler, msg, JVM etc and also it work as a Comments.
+
+some of the important and commonly used annotations in the Spring are following,
+1. @Repository
+2. @Service
+3. @Configuration
+4. @Component
+5. @Bean
+6. @Controller
+7. @RestController
+8. @Autowired
+9. @Required
+10. @Primary
+11. @Transactional
+
+They are the some of the commonly used annotations in the spring and springboot also.
+
+Annotations are present in the package of,
+"org.springframework.stereotype.*".
+
+We need to import this package to take benefits of annotations.
+
+
+
    
