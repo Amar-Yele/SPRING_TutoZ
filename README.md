@@ -45,15 +45,13 @@ To collect the information from XML by IOC there is two approaches
   
    but when we use this NEW Approach then then we don't need explicitly call the object.
 
-# ===============================
-
 Constructor is get automatically Called whenever we creat it's Object.
 
 # ==============================
 
-## Spring-03 Annotaion
+## Spring-03 Annotaion **********
 
-### Annotation
+### Annotation *******
 
 came in the java's 1.5 version.
 
