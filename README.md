@@ -77,7 +77,7 @@ some of the important and commonly used annotations in the Spring are following,
 They are the some of the commonly used annotations in the spring and springboot also.
 
 Annotations are present in the package of,
-##### "org.springframework.stereotype.*".
+#### "org.springframework.stereotype.*".
 
 We need to import this package to take benefits of annotations.
 
