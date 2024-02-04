@@ -83,7 +83,7 @@ We need to import this package to take benefits of annotations.
 
 ### Setter Injection
 1. use setter method to inject the dependant values/objects to target class object.
-2. #### <property name='' value=''/> and <property name='' ref=''/>
+2. #### < property name='' value=''/ > and < property name='' ref=''/ >
 3. supports cylic dependancy injection
 4. bit slow becoz injection happens after creating the Target class object.
 5. First Target object and later Dependant object will be created.
@@ -100,7 +100,7 @@ It requires a default (no-argument) constructor for the bean, and dependencies c
 
 ### Constructor Injection
 1. use constructor to inject the dependant values/objects to target class object.
-2. #### <constructor-arg name='' value=''/> and <constructor-arg name='' ref=''/>
+2. #### "< constructor-arg name='' value=''/ > and <constructor-arg name='' ref=''/ >
 3. Doesn't supports cylic dependancy injection
 4. It is Fast becoz injection happens while instantiating the dependant class 
 object.
