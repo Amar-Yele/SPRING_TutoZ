@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Define beans here -->
+    
+   <bean id="aref" class="in.Mitanand.Constructor.Student">
+	   
+	   <constructor-arg type="int" index="0">
+		   <value >18</value>
+	   </constructor-arg>
+	   
+	   <constructor-arg index="1" type="String">
+		   <value>Virat</value>
+	   </constructor-arg>
+	   
+	   <constructor-arg type="int" index="2">
+		   <value>35</value>
+	   </constructor-arg>
+
+	   <constructor-arg name="cert" ref="bref"/>
+	   
+	   <constructor-arg type="List">
+		   <list>
+			   <value>INDIA</value>
+			   <value>RCB</value>
+		   </list>
+	   </constructor-arg>
+	   
+   </bean>
+   <bean id="bref" class="in.Mitanand.Constructor.Certifications" c:name="King of Cricket"/>
+
+    <!-- Example Elon Bhau -->
+    
+       <bean id="eref" class="in.Mitanand.Constructor.Student">
+	   <constructor-arg type="int" index="0" value="2030"/> 
+	   <constructor-arg index="1" type="String" value="Elon"/> 
+	   <constructor-arg type="int" index="2" value="50"/>
+	   <constructor-arg name="cert" ref="fref"/>
+	   
+	   <constructor-arg type="List">
+		   <list>
+			   <value>America</value>
+			   <value>SpaceX</value>
+		   </list>
+	   </constructor-arg>
+	   
+   </bean>
+   <bean id="fref" class="in.Mitanand.Constructor.Certifications" c:name="The Owner of the SpaceX/Tesla"/>
+   
+   
+    <!-- Example Roman Bhau -->
+    
+       <bean id="gref" class="in.Mitanand.Constructor.Student" c:id="5" c:name="Roman" c:age="40">
+
+	   <constructor-arg name="cert" ref="href"/>
+	   
+	   <constructor-arg type="List">
+		   <list>
+			   <value>America</value>
+			   <value>The Sheild</value>
+		   </list>
+	   </constructor-arg>
+	   
+   </bean>
+   <bean id="href" class="in.Mitanand.Constructor.Certifications" c:name="The Leader of WWE"/>
+    
+       
+</beans>
