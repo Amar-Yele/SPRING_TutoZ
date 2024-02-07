@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	
+    <!-- Define beans here -->
+    <bean id="lap" class="com.Mitanand.Interfaces.Laptop" init-method="afterPropertiesSet" destroy-method="destroy">
+		<property name="price" value="54000"/>
+		<property name="compName" value="Acer"/>
+		<property name="origin" value="China"/>
+    </bean>
+    
+    <!-- Interfaces Based....-->
+    <bean id="pen" class="com.Mitanand.Methods.Pen" init-method="init" destroy-method="destroy">
+		<property name="price" value="10"/>
+		<property name="compName" value="Sonata Mirror"/>
+    </bean>
+    
+    <!-- Annotations Based....-->
+    
+    <bean id="watch" class="com.Mitanand.Annotations.Watch" p:price="2999" p:compName="Citizen" p:origin="Bharat">
+		<!-- 
+		<property name="price" value="2999"/>
+		<property name="compName" value="Citizen"/>
+		<property name="origin" value="Bharat"/>
+		<bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor">
+		<context:annotation-config />
+		-->
+		
+    </bean>
+    <bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor"/>
+    
+
+    
+</beans>
