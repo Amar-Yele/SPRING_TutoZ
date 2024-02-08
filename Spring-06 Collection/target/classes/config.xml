@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+We need a NameSpace it will be present in Documenetation of Spring 5 or you can search on google
+
+-->
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context" 
+    xmlns:p="http://www.springframework.org/schema/p" 
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context/spring-context.xsd"> 
+        
+        <!-- bean definitions here 
+        	1st We need to declare the student class which is considered as a Bean class
+        -->
+        
+        <!-- 3rd Student-->
+        <bean class="in.Mitanand.Spring_06.Student" name="student1">
+			
+			<property name="studentId" value="18"/>
+			<property name="studentName" value="Virat"/>
+			
+			<property name="studentPhone">
+				<list>
+					<value>8776051890</value>
+					<value>8776051892</value>
+					<value>8776051893</value>
+					<value>8776051894</value>
+					<null/>
+				</list>
+			</property>
+			<property name="studentAddress">
+				<set>
+					<value>Pune</value>
+					<value>Narhe</value>
+					<value>Shivneri</value>
+					<value>Satara</value>
+					<null/>
+				</set>			
+			</property>
+			<property name="studentCourses">
+				<map>
+					<entry key="Java" value="2000"/>
+					<entry key="Python" value="4000"/>
+					<entry key="Spring/SpringBoot" value="5990"/>
+					<entry key="Full Stack" value="9099"/>
+					
+				</map>	
+			</property>
+			
+        </bean>
+        <bean class="in.Mitanand.Spring_06.Student" name="student2">
+			
+			<property name="studentId" value="3"/>
+			<property name="studentName" value="Mitanand"/>
+			
+			<property name="studentPhone">
+				<list>
+					<value>987654321</value>
+					<value>877605189</value>
+					<value>877605198</value>
+					<value>877605180</value>
+					<null/>
+				</list>
+			</property>
+			<property name="studentAddress">
+				<set>
+					<value>Pune</value>
+					<value>Narhe</value>
+					<value>Satara</value>
+					<null/>
+				</set>			
+			</property>
+			<property name="studentCourses">
+				<map>
+					<entry key="Java" value="2000"/>
+					<entry key="Python" value="4000"/>
+					<entry key="Spring/SpringBoot" value="5990"/>
+					<entry key="Full Stack" value="9099"/>
+					<entry key="HTML/CSS" value="799"/>
+					
+				</map>	
+			</property>
+			
+        </bean>
+
+</beans>
